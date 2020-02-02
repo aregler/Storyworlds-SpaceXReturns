@@ -19,5 +19,9 @@ public class video_script : MonoBehaviour
         {
             GameObject.Find("LevelChanger").GetComponent<LevelChanger>().loadNextScene();
         }
+        if(timer <= -4)
+        {
+            Application.Quit();
+        }
     }
 }
